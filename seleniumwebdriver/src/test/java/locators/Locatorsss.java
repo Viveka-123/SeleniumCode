@@ -57,9 +57,24 @@ public class Locatorsss {
 			List<WebElement> img=driver.findElements(By.tagName("img"));
 			System.out.println("img "+img.size());
 			driver.quit();
-			*/
+			
 //**********************************************************************************************************		
 			//ERP24K WEBSITE
+			WebDriver driver=new ChromeDriver();
+			driver.get("https://www.erp24k.com/");
+			driver.manage().window().maximize();
+			driver.findElement(By.id("kt_body")).isDisplayed();
+			System.out.println("Displayed");
+			driver.findElement(By.linkText("Get started")).click();
+			driver.findElement(By.linkText("Login")).click();
+			List<WebElement> links= driver.findElements(By.className("ng-star-inserted"));
+			System.out.println("Links "+links.size());
+			List<WebElement> img=driver.findElements(By.tagName("img"));
+			System.out.println("img "+img.size());
+			driver.quit();
+			*/
+//**********************************************************************************************************		
+			//Getikk WEBSITE
 			WebDriver driver=new ChromeDriver();
 			driver.get("https://www.erp24k.com/");
 			driver.manage().window().maximize();
